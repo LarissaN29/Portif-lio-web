@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Camila Andrade | Portfólio</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --rosa: #C27C88;
+            --rosa-claro: #F2D5D8;
+            --creme: #FFF8F6;
+            --azul: #273B4A;
+            --texto: #52616B;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 75px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--texto);
+            background: var(--creme);
+        }
+
+        /* MENU */
+        .navbar {
+            background: var(--creme);
+            border-bottom: 1px solid #F0DDE0;
+        }
+
+        .navbar-brand {
+            color: var(--azul) !important;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: var(--azul) !important;
+        }
+
+        .nav-link:hover {
+            color: var(--rosa) !important;
+        }
+
+        /* APRESENTAÇÃO */
+        .hero {
+            padding: 150px 0 100px;
+            text-align: center;
+            background: var(--creme);
+        }
+
+        .hero h1 {
+            color: var(--azul);
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero h2 {
+            color: var(--rosa);
+            font-size: 1.4rem;
+        }
+
+        .hero p {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .hello {
+            color: var(--rosa);
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .hero-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            height: 90px;
+            margin-top: 25px;
+            border-radius: 50%;
+            background: var(--rosa-claro);
+            color: var(--rosa);
+            font-size: 3rem;
+        }
+
+        /* SEÇÕES */
+        .section {
+            padding: 75px 0;
+        }
+
+        .section-title {
+            color: var(--azul);
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+
+        .section-subtitle {
+            color: var(--rosa);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        /* CARDS */
+        .card {
+            border: 1px solid #F0DDE0;
+            border-radius: 18px;
+            background: white;
+        }
+
+        .card h4, .card h5 {
+            color: var(--azul);
+        }
+
+        .card p {
+            line-height: 1.7;
+        }
+
+        .icon {
+            color: var(--rosa);
+            font-size: 2rem;
+        }
+
+        /* HABILIDADES */
+        .skill {
+            padding: 18px;
+            text-align: center;
+            background: white;
+            border: 1px solid #F0DDE0;
+            border-radius: 12px;
+        }
+
+        .skill i {
+            color: var(--rosa);
+            font-size: 2rem;
+        }
+
+        .skill h5 {
+            color: var(--azul);
+            margin-top: 10px;
+        }
+
+        /* PROJETOS */
+        .project-top {
+            padding: 25px;
+            background: var(--azul);
+            color: white;
+            border-radius: 18px 18px 0 0;
+            font-size: 2.5rem;
+        }
+
+        .badge {
+            background: var(--rosa-claro);
+            color: var(--azul);
+            font-weight: normal;
+        }
+
+        /* BOTÕES */
+        .btn-rosa {
+            background: var(--rosa);
+            color: white;
+            border: 1px solid var(--rosa);
+        }
+
+        .btn-rosa:hover {
+            background: #A96270;
+            color: white;
+        }
+
+        .btn-outline-rosa {
+            border: 1px solid var(--rosa);
+            color: var(--rosa);
+        }
+
+        .btn-outline-rosa:hover {
+            background: var(--rosa);
+            color: white;
+        }
+
+        /* RODAPÉ */
+        footer {
+            background: var(--azul);
+            color: white;
+            padding: 30px 0;
+        }
+
+        footer a {
+            color: var(--rosa-claro);
+            text-decoration: none;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero {
+                padding-top: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <button class="navbar-toggler" data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- APRESENTAÇÃO -->
+    <section id="inicio" class="hero">
+
+        <div class="container">
+
+            <p class="hello">HELLO, WORLD!</p>
+
+            <h1>Camila Andrade</h1>
+
+            <h2>Desenvolvedora Front-End</h2>
+
+            <p>
+                Transformo ideias em interfaces simples,
+                acessíveis e funcionais.
+            </p>
+
+            <a href="#projetos" class="btn btn-rosa me-2">
+                Conheça meus projetos
+            </a>
+
+            <a href="#contato" class="btn btn-outline-rosa">
+                Fale comigo
+            </a>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+
+        <div class="container">
+
+            <p class="section-subtitle">UM POUCO SOBRE MIM</p>
+
+            <h2 class="section-title">Quem está por trás do código?</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-7">
+
+                    <div class="card p-4 h-100">
+
+                        <i class="bi bi-person-badge icon"></i>
+
+                        <h4 class="mt-3">Olá, sou a Camila!</h4>
+
+                        <p>
+                            Tenho 22 anos e curso Análise e Desenvolvimento
+                            de Sistemas. Estou em transição para o mercado
+                            de tecnologia após dois anos atuando com
+                            suporte técnico.
+                        </p>
+
+                        <p>
+                            Meu interesse está no desenvolvimento Front-End,
+                            no design responsivo e na criação de experiências
+                            digitais acessíveis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-5">
+
+                    <div class="card p-4 h-100">
+
+                        <i class="bi bi-bullseye icon"></i>
+
+                        <h4 class="mt-3">Meu objetivo</h4>
+
+                        <p>
+                            Conquistar um estágio em desenvolvimento web
+                            e evoluir para uma posição Front-End Júnior.
+                        </p>
+
+                        <p>
+                            Futuramente, quero me especializar em UI/UX
+                            ou frameworks JavaScript modernos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section"
+        style="background-color: #F2D5D8;">
+
+        <div class="container">
+
+            <p class="section-subtitle">O QUE EU SEI FAZER</p>
+
+            <h2 class="section-title">Habilidades e competências</h2>
+
+            <div class="row g-3">
+
+                <div class="col-md-3 col-6">
+                    <div class="skill">
+                        <i class="bi bi-filetype-html"></i>
+                        <h5>HTML5</h5>
+                        <small>Intermediário</small>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="skill">
+                        <i class="bi bi-filetype-css"></i>
+                        <h5>CSS3</h5>
+                        <small>Intermediário</small>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="skill">
+                        <i class="bi bi-bootstrap"></i>
+                        <h5>Bootstrap 5</h5>
+                        <small>Intermediário</small>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="skill">
+                        <i class="bi bi-filetype-js"></i>
+                        <h5>JavaScript</h5>
+                        <small>Básico</small>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="skill">
+                        <i class="bi bi-git"></i>
+                        <h5>Git e GitHub</h5>
+                        <small>Básico</small>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="skill">
+                        <i class="bi bi-phone"></i>
+                        <h5>Responsividade</h5>
+                        <small>Intermediário</small>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="skill">
+                        <i class="bi bi-lightbulb"></i>
+                        <h5>Resolução de problemas</h5>
+                        <small>Avançado</small>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="skill">
+                        <i class="bi-chat-dots"></i>
+                        <h5>Comunicação</h5>
+                        <small>Avançado</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+
+        <div class="container">
+
+            <p class="section-subtitle">MEUS TRABALHOS</p>
+
+            <h2 class="section-title">Projetos em destaque</h2>
+
+            <div class="row g-4">
+
+                <!-- PROJETO 1 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card h-100">
+
+                        <div class="project-top">
+                            <i class="bi bi-cup-hot"></i>
+                        </div>
+
+                        <div class="card-body">
+
+                            <h5> App Mobile de Contas a pagar</h5>
+
+                            <p>
+                                Aplicativo para gerenciamento de contas a pagar, com funcionalidades de cadastro, edição e exclusão de despesas.
+                            </p>
+
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">JavaScript</span>
+<a href="https://github.com/LarissaN29/contas-a-pagar/blob/main/app.json"
+   target="_blank"
+   class="btn btn-rosa">
+
+    <i class="bi bi-github"></i>
+    Ver código no GitHub
+
+</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+    </section>
+
+
+    <!-- FORMAÇÃO E EXPERIÊNCIA -->
+    <section class="section"
+        style="background-color: #F2D5D8;">
+
+        <div class="container">
+
+            <p class="section-subtitle">MINHA TRAJETÓRIA</p>
+
+            <h2 class="section-title">Formação e experiência</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+
+                    <div class="card p-4 h-100">
+
+                        <i class="bi bi-mortarboard icon"></i>
+
+                        <h4 class="mt-3">Formação</h4>
+
+                        <hr>
+
+                        <h5>Análise e Desenvolvimento de Sistemas</h5>
+                        <p>Faculdade Tecnológica</p>
+                        <p>2025 – Presente</p>
+
+                        <h5>Desenvolvimento Web Front-End</h5>
+                        <p>Escola Técnica de TI</p>
+                        <p>2024</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="card p-4 h-100">
+
+                        <i class="bi bi-briefcase icon"></i>
+
+                        <h4 class="mt-3">Experiência</h4>
+
+                        <hr>
+
+                        <h5>Analista de Suporte Técnico</h5>
+                        <p>Empresa de Telecomunicações</p>
+                        <p>2023 – 2025</p>
+
+                        <h5>Estagiária de TI — Helpdesk</h5>
+                        <p>Empresa de Tecnologia</p>
+                        <p>2022 – 2023</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+
+        <div class="container">
+
+ <p class="section-subtitle">Estou aberta a novas oportunidades
+                            e conexões profissionais.</p>
+            <h2 class="section-title">Entre em contato</h2>
+            
+
+            <div class="row g-4">
+
+                <div class="col-md-5">
+
+                    <div class="card p-4 h-100">
+
+                        <i class="bi bi-envelope icon"></i>
+
+                        <h4 class="mt-3">Minhas redes</h4>
+
+                        <p>
+                            <i class="bi bi-envelope"></i>
+                            camila.andrade.dev@email.com
+                        </p>
+
+                        <a href="https://www.linkedin.com/"
+                            target="_blank"
+                            class="btn btn-rosa mb-2">
+                            <i class="bi bi-linkedin"></i>
+                            LinkedIn
+                        </a>
+
+                        <a href="https://github.com/"
+                            target="_blank"
+                            class="btn btn-outline-rosa">
+                            <i class="bi bi-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-7">
+
+                    <div class="card p-4">
+
+                        <h4>Envie uma mensagem</h4>
+
+                        <form action="mailto:camila.andrade.dev@email.com"
+                            method="post" enctype="text/plain">
+
+                            <input type="text"
+                                name="nome"
+                                class="form-control mb-3"
+                                placeholder="Seu nome"
+                                required>
+
+                            <input type="email"
+                                name="email"
+                                class="form-control mb-3"
+                                placeholder="Seu e-mail"
+                                required>
+
+                            <textarea name="mensagem"
+                                class="form-control mb-3"
+                                placeholder="Sua mensagem"
+                                rows="4"
+                                required></textarea>
+
+                            <button class="btn btn-rosa">
+                                Enviar mensagem
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="text-center">
+
+        <p class="mb-1">
+            © 2026 Camila Andrade
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
